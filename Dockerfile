@@ -24,9 +24,7 @@ RUN gem install one_gadget
 
 #peda, pwngdb
 RUN git clone https://github.com/longld/peda.git ~/peda
-WOKRDIR ~/
-RUN cd ~/
-RUN git clone https://github.com/scwuaptx/Pwngdb.git
+RUN git clone https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb
 RUN cp ~/Pwngdb/.gdbinit ~/
 
 #gdb setting
