@@ -15,8 +15,7 @@ RUN pip install --upgrade pip && \
   pip install --upgrade ropgadget
 
 # WOKRDIR worspace
-RUN mkdir -p /workspace/binExploit
-WORKDIR /workspace
+RUN mkdir -p ~/workspace/binExploit
 
 # GEM [one_gadget]
 RUN git clone https://github.com/david942j/one_gadget.git
@@ -24,8 +23,8 @@ RUN cd one_gadget
 RUN gem install one_gadget
 
 #peda, pwngdb
-WORKDIR /
 RUN git clone https://github.com/longld/peda.git ~/peda
+RUN workspace ~/
 RUN cd ~/
 RUN git clone https://github.com/scwuaptx/Pwngdb.git
 RUN cp ~/Pwngdb/.gdbinit ~/
