@@ -31,8 +31,3 @@ RUN cp ~/Pwngdb/.gdbinit ~/
 #gdb setting
 RUN echo "set disassembly-flavor intel" >> ~/.gdbinit
 
-# architecture i386
-WORKDIR /
-RUN dpkg --add-architecture i386
-RUN apt-get install libc6-dbg
-# RUN apt-get install libc6-dbg:i386
