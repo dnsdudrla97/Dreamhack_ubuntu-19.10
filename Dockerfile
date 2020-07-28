@@ -33,4 +33,4 @@ RUN echo "set disassembly-flavor intel" >> ~/.gdbinit
 
 # architecture i386
 RUN dpkg --add-architecture i386
-RUN apt-get -qq -y install libc6-dbg libc6-dbg:i386
+RUN apt-get -y install libc6-dbg libc6-dbg:i386
