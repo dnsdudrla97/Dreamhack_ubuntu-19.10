@@ -1,6 +1,8 @@
 # DreamHack WRITE-UP ubuntu:19.10
 FROM ubuntu:19.10
 
+# architecture i386
+RUN dpkg --add-architecture i386
 # PACKAGE
 RUN apt-get update &&\
   apt-get -qq -y install git curl build-essential gcc gcc-multilib ruby \
